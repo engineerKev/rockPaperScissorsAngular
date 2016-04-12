@@ -1,0 +1,28 @@
+<div class="row row-spacing">
+    <div class="row">
+        <div class="col-md-4 col-xs-3"></div>
+        <div class="col-md-4 col-xs-6">
+            <div class="row">
+                <div class="col-md-6 col-xs-6 text-center"><h3>Player:</h3></div>
+                <div class="col-md-6 col-xs-6 text-center"><h3>Computer:</h3></div>
+            </div>
+        </div>
+        <div class="col-md-4 col-xs-3"></div>
+    </div>
+    <div class="row">
+        <div class="col-md-4 col-xs-3"></div>
+        <div class="col-md-4 col-xs-6">
+            <div class="col-md-6 col-xs-6 text-center" ng-class="{defeated: !results.player && results.computer !== results.player, victory: results.player}"><h3>{{letterToWord[myPick]}}</h3></div>
+            <div class="col-md-6 col-xs-6 text-center" ng-class="{defeated: !results.computer && results.computer !== results.player, victory: results.computer}"><h3>{{letterToWord[computerPick]}}</h3></div>
+        </div>
+        <div class="col-md-4 col-xs-3"></div>
+    </div>
+    <div class="row">
+        <div class="col-md-4 col-xs-3"></div>
+        <div class="col-md-4 col-xs-6">
+            <div class="col-md-6 col-xs-6 text-center" ng-class="{winning: userScore > computerScore, losing: computerScore > userScore}"><h3>{{userScore}}</h3></div>
+            <div class="col-md-6 col-xs-6 text-center" ng-class="{winning: userScore < computerScore, losing: computerScore < userScore}"><h3>{{computerScore}}</h3></div>
+        </div>
+        <div class="col-md-4 col-xs-3"></div>
+    </div>
+</div>

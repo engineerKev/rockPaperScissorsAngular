@@ -1,0 +1,40 @@
+/* app css stylesheet */
+html, body, input, select, textarea{
+    font-size: 1.05em !important;
+}
+body, html{
+    height: 100%;
+}
+.row-spacing{
+    margin-bottom: 2em;
+}
+.header-title{
+    padding: 2% 0;
+    color: #fff;
+}
+.header{
+    background-color: #555;
+    margin-bottom: 3%;
+}
+.defeated{
+    text-decoration: line-through;
+}
+.victory, .winning{
+    color: #5cb85c;
+}
+.results, .losing{
+    color: #d9534f;
+}
+.tie{
+    color: #f0ad4e;
+}
+.game-container{
+    background-color: #eee;
+    height: 75%;
+}
+.container-padding{
+    padding: 5% 0 20% 0;
+}
+.options{
+    color: #5bc0de;
+}

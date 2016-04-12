@@ -1,0 +1,18 @@
+<div ngclass="row text-center">
+    <div class="row row-spacing">
+        <div class="col-md-4 col-xs-4"></div>
+        <div class="col-md-4 col-xs-4 text-center" ng-show="myWins > 0 || computerWins > 0" >
+            <div class="btn btn-primary btn-md" ng-click="newGame()">Start Over</div>
+        </div>
+        <div class="col-md-4 col-xs-4"></div>
+    </div>
+    <div class="row">
+        <div class="col-md-4 col-xs-4"></div>
+        <div class="col-md-4 col-xs-4 text-center">
+            <label for="currentStrategy"><h4>Strategies: </h4></label>
+            <select name="currentStrategy" ng-options="option.name for option in strategies.optionsAvailable track by option.name" ng-model="strategies.defaultOption">
+            </select>
+        </div>
+        <div class="col-md-4 col-xs-4"></div>
+    </div>
+</div>
